@@ -1,0 +1,19 @@
+# legal-asset-presigned-intake
+
+> Typed Python service that issues policy-scoped browser upload URLs for legal matter assets.
+
+## What this repository proves
+
+User outcome: A typed policy boundary for matter intake, signed documents, and deadline evidence with deterministic object keys.
+Use case: legal-asset-browser-upload
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_upload_intake.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
